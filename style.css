@@ -95,6 +95,8 @@ button { color: inherit; }
   font-weight: 600;
   letter-spacing: 0.15em;
 }
+.published-link { color: var(--mint); text-decoration: none; transition: color 160ms ease; }
+.published-link:hover { color: var(--lime); }
 .slide-count { min-width: 58px; text-align: right; color: var(--white); font-variant-numeric: tabular-nums; }
 .slide-count #current-number { color: var(--lime); font-size: 14px; }
 .count-divider { color: #63877f; }
