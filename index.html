@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#062c32">
+  <meta name="description" content="Інтерактивна біологічна презентація про водорості у звичних продуктах харчування.">
+  <title>Водорості на нашому столі</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#slide-1" aria-label="На початок презентації">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span>БІОЛОГІЯ <span class="brand-divider">/</span> ДОСЛІДЖУЄМО</span>
+    </a>
+    <span class="topbar-topic">ЖИТТЯ В ОКЕАНІ — НА НАШІЙ ТАРІЛЦІ</span>
+    <span class="slide-count" aria-live="polite"><span id="current-number">01</span><span class="count-divider"> / </span>08</span>
+  </header>
+
+  <main id="presentation">
+    <section class="slide slide-hero active" id="slide-1" aria-labelledby="title-1" aria-hidden="false">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> ІНТЕРАКТИВНА ПРЕЗЕНТАЦІЯ · 8 СЛАЙДІВ</p>
+        <h1 id="title-1">Водорості<br><span>на нашому</span><br>столі<span class="title-period">.</span></h1>
+        <p class="hero-description">Де ми зустрічаємо водорості у повсякденному житті — і чому їх не завжди видно?</p>
+        <button class="button button-primary" data-go="next">Розпочати <span aria-hidden="true">↗</span></button>
+        <div class="hero-note"><span class="note-line"></span> Дивовижне поруч — варто лише придивитися</div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-image" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Kelp_by_Gustavo_Gerdel.jpg" alt="Пірнальник у заростях гігантської ламінарії">
+        <div class="hero-image-shade"></div>
+        <div class="hero-image-label"><span class="label-pulse"></span> СВІТ ВОДОРОСТЕЙ <span>01 — 08</span></div>
+        <a class="photo-credit" href="https://commons.wikimedia.org/wiki/File:Kelp_by_Gustavo_Gerdel.jpg" target="_blank" rel="noopener noreferrer">Фото: Gustavo Gerdel / Wikimedia Commons · CC BY-SA 4.0</a>
+        <div class="hero-fact glass"><span class="fact-icon">〰</span><span><strong>Мікроскопічні й велетенські</strong><small>Водорості мають безліч форм і розмірів</small></span></div>
+        <span class="orbit orbit-one" aria-hidden="true"></span>
+        <span class="orbit orbit-two" aria-hidden="true"></span>
+      </div>
+      <span class="slide-index" aria-hidden="true">01</span>
+    </section>
+
+    <section class="slide slide-about" id="slide-2" aria-labelledby="title-2" aria-hidden="true">
+      <div class="section-heading">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> СПОЧАТКУ — ЗНАЙОМСТВО</p>
+        <h2 id="title-2">Що таке <span>водорості?</span></h2>
+        <p class="section-intro">Різноманітна група організмів, що переважно живе у воді та утворює органічні речовини завдяки фотосинтезу.</p>
+      </div>
+      <div class="about-layout">
+        <div class="about-image-wrap">
+          <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Підводний світ коралового рифу з водоростями">
+          <span class="image-caption">ПІДВОДНА ЕКОСИСТЕМА <span>ФОТОСИНТЕЗУЄ</span></span>
+          <span class="image-orb" aria-hidden="true">✳</span>
+        </div>
+        <div class="about-points">
+          <article class="info-card glass">
+            <span class="card-number">01</span><span class="card-symbol">◉</span>
+            <h3>Де живуть?</h3>
+            <p>У морях, прісних водоймах і вологих місцях. Одні вільно плавають, інші прикріплюються до поверхонь.</p>
+          </article>
+          <article class="info-card glass">
+            <span class="card-number">02</span><span class="card-symbol">☼</span>
+            <h3>Чому важливі?</h3>
+            <p>Мікроскопічний фітопланктон створює органічні речовини й є основою багатьох водних харчових ланцюгів.</p>
+          </article>
+          <article class="info-card glass">
+            <span class="card-number">03</span><span class="card-symbol">≈</span>
+            <h3>Різні за будовою</h3>
+            <p>Водорості не є справжніми рослинами: це різнорідна група організмів, серед яких є й одноклітинні.</p>
+          </article>
+        </div>
+      </div>
+      <span class="slide-index" aria-hidden="true">02</span>
+    </section>
+
+    <section class="slide slide-food" id="slide-3" aria-labelledby="title-3" aria-hidden="true">
+      <div class="section-heading food-heading">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> ЗНАЙДИМО ЇХ У ЗВИЧНИХ РЕЧАХ</p>
+        <h2 id="title-3">Водорості <span>в продуктах</span></h2>
+        <p class="section-intro">Уважно читай склад: похідні водоростей трапляються у багатьох різних продуктах.</p>
+      </div>
+      <div class="food-grid">
+        <article class="food-card glass">
+          <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&amp;fit=crop&amp;w=620&amp;q=80" alt="Суші й роли, загорнуті в листя норі" loading="lazy">
+          <div class="food-card-copy"><span class="food-tag">МОРСЬКІ ВОДОРОСТІ</span><h3>Суші та роли</h3><p><strong>Норі</strong> — висушені й спресовані їстівні морські водорості.</p></div>
+          <span class="food-number">01</span>
+        </article>
+        <article class="food-card glass">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=620&amp;q=80" alt="Свіжа страва з листовою зеленню та овочами" loading="lazy">
+          <div class="food-card-copy"><span class="food-tag">БЕЗПОСЕРЕДНЬО</span><h3>Морська капуста</h3><p>Їстівна бура водорість ламінарія — у салатах і гарнірах.</p></div>
+          <span class="food-number">02</span>
+        </article>
+        <article class="food-card glass">
+          <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&amp;fit=crop&amp;w=620&amp;q=80" alt="Кульки різнобарвного морозива в ріжку" loading="lazy">
+          <div class="food-card-copy"><span class="food-tag">ТЕКСТУРА Й СТАБІЛЬНІСТЬ</span><h3>Морозиво</h3><p><strong>Карагінан</strong> або <strong>альгінати</strong> допомагають стабілізувати текстуру.</p></div>
+          <span class="food-number">03</span>
+        </article>
+        <article class="food-card glass">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&amp;fit=crop&amp;w=620&amp;q=80" alt="Йогуртовий десерт із ягодами" loading="lazy">
+          <div class="food-card-copy"><span class="food-tag">ЗАГУЩЕННЯ</span><h3>Йогурти й десерти</h3><p>Карагінан чи агар можуть надавати продукту потрібної консистенції.</p></div>
+          <span class="food-number">04</span>
+        </article>
+        <article class="food-card glass">
+          <img src="https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?auto=format&amp;fit=crop&amp;w=620&amp;q=80" alt="Яскраві желейні цукерки" loading="lazy">
+          <div class="food-card-copy"><span class="food-tag">ЖЕЛЕПОДІБНА СТРУКТУРА</span><h3>Желейні цукерки</h3><p><strong>Агар</strong> із червоних водоростей може бути желювальним агентом.</p></div>
+          <span class="food-number">05</span>
+        </article>
+        <article class="food-card glass">
+          <img src="https://images.unsplash.com/photo-1472476443507-c7a5948772fc?auto=format&amp;fit=crop&amp;w=620&amp;q=80" alt="Асорті соусів і намазок до страви" loading="lazy">
+          <div class="food-card-copy"><span class="food-tag">ОДНОРІДНА КОНСИСТЕНЦІЯ</span><h3>Соуси й майонез</h3><p>У деяких рецептурах є альгінати чи карагінан для стабілізації.</p></div>
+          <span class="food-number">06</span>
+        </article>
+        <article class="food-card glass food-card-wide">
+          <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Рослинний напій у склянці" loading="lazy">
+          <div class="food-card-copy"><span class="food-tag">ЗАЛЕЖИТЬ ВІД ВИРОБНИКА</span><h3>Рослинні напої</h3><p>До окремих напоїв можуть додавати карагінан чи інші стабілізатори. Перевіряй етикетку.</p></div>
+          <span class="food-number">07</span>
+        </article>
+      </div>
+      <span class="slide-index" aria-hidden="true">03</span>
+    </section>
+
+    <section class="slide slide-how" id="slide-4" aria-labelledby="title-4" aria-hidden="true">
+      <div class="section-heading">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> ВІД ВОДОРОСТІ ДО ІНГРЕДІЄНТА</p>
+        <h2 id="title-4">Як вони потрапляють <span>у їжу?</span></h2>
+        <p class="section-intro">Деякі водорості їдять цілими. Інші стають джерелом речовин, що змінюють текстуру продуктів.</p>
+      </div>
+      <div class="ingredient-layout">
+        <div class="ingredient-list">
+          <article class="ingredient-row glass"><span class="ingredient-code">E406</span><div><h3>Агар-агар</h3><p>Переважно з червоних водоростей. Рослинна альтернатива желатину для желе й десертів.</p></div><span class="ingredient-arrow">↗</span></article>
+          <article class="ingredient-row glass"><span class="ingredient-code">E407</span><div><h3>Карагінан</h3><p>Отримують із червоних водоростей. Використовують для загущення та стабілізації.</p></div><span class="ingredient-arrow">↗</span></article>
+          <article class="ingredient-row glass"><span class="ingredient-code">E400–E405</span><div><h3>Альгінати</h3><p>Видобувають із бурих водоростей. Допомагають загущувати й формувати гелеподібну текстуру.</p></div><span class="ingredient-arrow">↗</span></article>
+          <article class="ingredient-row glass"><span class="ingredient-code ingredient-code-word">ЦІЛІ</span><div><h3>Норі</h3><p>Оброблені листи їстівних червоних водоростей, якими загортають суші.</p></div><span class="ingredient-arrow">↗</span></article>
+        </div>
+        <div class="ingredient-visual">
+          <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Рух води в океані" loading="lazy">
+          <div class="visual-caption glass"><span>ВОДОРОСТІ</span><i>→</i><span>ЕКСТРАКТ</span><i>→</i><span>ТЕКСТУРА</span></div>
+          <p>Загущення <span>·</span> желювання <span>·</span> стабілізація</p>
+          <span class="visual-deco" aria-hidden="true">〰</span>
+        </div>
+      </div>
+      <span class="slide-index" aria-hidden="true">04</span>
+    </section>
+
+    <section class="slide slide-labels" id="slide-5" aria-labelledby="title-5" aria-hidden="true">
+      <div class="section-heading">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> МАЛЕНЬКЕ РОЗСЛІДУВАННЯ</p>
+        <h2 id="title-5">Читай склад.<br><span>Знаходь підказки.</span></h2>
+        <p class="section-intro">Ці назви у складі можуть указувати на добавки, які походять із водоростей.</p>
+      </div>
+      <div class="label-layout">
+        <div class="label-card">
+          <div class="label-top"><span>ЗРАЗОК ЕТИКЕТКИ</span><span class="label-leaf">✳</span></div>
+          <div class="label-product">ПУДИНГ<br><span>ВАНІЛЬНИЙ</span></div>
+          <div class="label-rule"></div>
+          <p class="ingredient-text">Склад: молоко, цукор, какао-масло, <mark>каррагінан (E407)</mark>, <mark>альгінат натрію (E401)</mark>, ароматизатор.</p>
+          <div class="label-stamp">СКЛАД<br><span>ПЕРЕВІРЕНО</span></div>
+          <span class="label-bottom">ІЛЮСТРАТИВНИЙ ПРИКЛАД — НЕ РЕАЛЬНИЙ ПРОДУКТ</span>
+        </div>
+        <div class="label-key">
+          <div class="key-intro"><span class="key-mark">↘</span><span>ШУКАЙ НАЗВУ АБО НОМЕР E</span></div>
+          <article class="key-row"><span class="key-e">E406</span><div><h3>Агар</h3><p>Желювальний агент із червоних водоростей.</p></div></article>
+          <article class="key-row"><span class="key-e">E407</span><div><h3>Карагінан</h3><p>Загусник і стабілізатор із червоних водоростей.</p></div></article>
+          <article class="key-row"><span class="key-e">E400</span><div><h3>Альгінова кислота</h3><p>Речовина, яку отримують із бурих водоростей.</p></div></article>
+          <article class="key-row"><span class="key-e">E401</span><div><h3>Альгінат натрію</h3><p>Сіль альгінової кислоти, харчовий загусник.</p></div></article>
+          <p class="label-caveat">Добавки можуть мати різне походження. Щоб дізнатися про конкретний продукт, перевіряй дані виробника.</p>
+        </div>
+      </div>
+      <span class="slide-index" aria-hidden="true">05</span>
+    </section>
+
+    <section class="slide slide-benefits" id="slide-6" aria-labelledby="title-6" aria-hidden="true">
+      <div class="section-heading">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> НЕ ЛИШЕ ПРО ТЕКСТУРУ</p>
+        <h2 id="title-6">Що цінного <span>у водоростях?</span></h2>
+        <p class="section-intro">Їстівні водорості можуть бути частиною різноманітного раціону — але їхній склад неоднаковий.</p>
+      </div>
+      <div class="benefit-layout">
+        <div class="benefit-grid">
+          <article class="benefit-card glass"><span class="benefit-icon">I</span><span class="benefit-index">01 / МІКРОЕЛЕМЕНТ</span><h3>Йод</h3><p>Деякі види містять йод, але його кількість дуже різниться.</p><span class="benefit-line"></span></article>
+          <article class="benefit-card glass"><span class="benefit-icon">⌁</span><span class="benefit-index">02 / РОСЛИННА СТРУКТУРА</span><h3>Клітковина</h3><p>Окремі їстівні види є джерелом харчових волокон.</p><span class="benefit-line"></span></article>
+          <article class="benefit-card glass"><span class="benefit-icon">✧</span><span class="benefit-index">03 / МІНЕРАЛИ</span><h3>Мінеральні речовини</h3><p>Серед них можуть бути калій, залізо та інші мінерали.</p><span class="benefit-line"></span></article>
+          <article class="benefit-card glass"><span class="benefit-icon">◎</span><span class="benefit-index">04 / ХАРЧОВІ ТЕХНОЛОГІЇ</span><h3>Користь для рецептур</h3><p>Екстракти водоростей допомагають створити бажану текстуру.</p><span class="benefit-line"></span></article>
+        </div>
+        <div class="benefit-note glass"><span class="note-star">✳</span><p><strong>Збалансований погляд</strong>Кількість поживних речовин залежить від виду, умов вирощування, обробки та розміру порції. Водорості не є універсальною добавкою.</p></div>
+      </div>
+      <span class="slide-index" aria-hidden="true">06</span>
+    </section>
+
+    <section class="slide slide-facts" id="slide-7" aria-labelledby="title-7" aria-hidden="true">
+      <div class="facts-header">
+        <div class="section-heading">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> П'ЯТЬ ФАКТІВ — І Є ПРО ЩО РОЗПОВІСТИ</p>
+          <h2 id="title-7">Цікаво знати<span class="title-period">.</span></h2>
+        </div>
+        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&amp;fit=crop&amp;w=740&amp;q=80" alt="Морська хвиля під час припливу" loading="lazy">
+      </div>
+      <div class="facts-list">
+        <article class="fact-row"><span class="fact-num">01</span><p>«Морська капуста» — поширена назва їстівної бурої водорості <em>ламінарії</em>.</p><span class="fact-type">НА ТАРІЛЦІ</span></article>
+        <article class="fact-row"><span class="fact-num">02</span><p>Агар-агар і карагінан отримують із різних червоних водоростей.</p><span class="fact-type">ІНГРЕДІЄНТИ</span></article>
+        <article class="fact-row"><span class="fact-num">03</span><p>Альгінати добувають переважно з бурих водоростей, зокрема ламінарієвих.</p><span class="fact-type">ІНГРЕДІЄНТИ</span></article>
+        <article class="fact-row"><span class="fact-num">04</span><p>Норі — це не назва однієї страви, а оброблене їстівне листя водоростей.</p><span class="fact-type">НА ТАРІЛЦІ</span></article>
+        <article class="fact-row"><span class="fact-num">05</span><p>Не всі водорості однакові: від виду залежать і смак, і склад, і застосування.</p><span class="fact-type">РОЗМАЇТТЯ</span></article>
+      </div>
+      <span class="slide-index" aria-hidden="true">07</span>
+    </section>
+
+    <section class="slide slide-end" id="slide-8" aria-labelledby="title-8" aria-hidden="true">
+      <div class="end-image">
+        <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Зелене життя підводного світу" loading="lazy">
+        <div class="end-image-overlay"></div>
+        <span class="end-image-caption">МОРЕ БЛИЖЧЕ, НІЖ ЗДАЄТЬСЯ</span>
+      </div>
+      <div class="end-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> ПІДСУМУЄМО</p>
+        <h2 id="title-8">Вони поруч.<br><span>Навіть якщо<br>їх не видно.</span></h2>
+        <p class="end-description">Від листа норі до добавок у десертах — водорості частіше з'являються в нашому харчуванні, ніж здається. Придивляйся до складу й пам'ятай: важливі і продукт, і його походження.</p>
+        <div class="end-takeaway"><span>ГОЛОВНА ДУМКА</span><strong>Читай етикетку. Цікався природою.</strong></div>
+        <button class="button button-primary replay-button" data-go="first">На початок <span aria-hidden="true">↺</span></button>
+      </div>
+      <span class="slide-index" aria-hidden="true">08</span>
+    </section>
+  </main>
+
+  <footer class="controls" aria-label="Керування презентацією">
+    <button class="nav-button previous" id="prev-slide" type="button" aria-label="Попередній слайд" disabled><span aria-hidden="true">←</span> <span class="nav-label">Назад</span></button>
+    <nav class="slide-nav" id="slide-nav" aria-label="Перейти до слайда"></nav>
+    <div class="progress-track" role="progressbar" aria-label="Прогрес презентації" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1"><span class="progress-fill" id="progress-fill"></span></div>
+    <button class="nav-button next" id="next-slide" type="button"><span class="nav-label">Далі</span> <span aria-hidden="true">→</span></button>
+  </footer>
+</body>
+</html>
